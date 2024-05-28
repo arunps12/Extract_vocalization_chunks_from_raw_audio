@@ -1,4 +1,5 @@
-# VisionInfantNet
+
+# Extract_vocalization_chunks_from_raw_audio
 
 ## Prerequisites
 
@@ -36,4 +37,17 @@ The script performs the following steps:
 3. Saving Extracted Chunks: Saves each extracted chunk as a separate audio file in the specified vocalization chunks directory.
 4. Generating Metadata: Creates a metadata CSV file with two columns: the file name of each extracted chunk and its label.
 
-
+### Example Directory Structure
+```sh
+project_root/
+├── install_requirements.py
+├── extracting_voc_chunks_metadata.py
+├── requirements.txt
+├── raw_audio_dir/
+│   ├── example1.wav
+│   ├── example1.txt
+|   ├── example2.wav
+│   ├── example2.txt
+│   └── ...
+└── voc_chunks_dir/
+└── out_dir/
