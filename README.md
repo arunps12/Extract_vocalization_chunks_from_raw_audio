@@ -28,3 +28,10 @@ To run the script, run it from the command line with three string inputs specify
 ```sh
 python extracting_voc_chunks_metadata.py <raw_audio_dir> <voc_chunks_dir> <metadata_dir>
 ```
+## Script Details
+The script performs the following steps:
+
+1. Loading Raw Audio and Timings: Reads the raw audio files and their corresponding timing text files from the specified directory.
+2. Extracting Vocalization Chunks: Uses the timing information to extract vocalization chunks from the raw audio files.
+3. Saving Extracted Chunks: Saves each extracted chunk as a separate audio file in the specified vocalization chunks directory.
+4. Generating Metadata: Creates a metadata CSV file with two columns: the file name of each extracted chunk and its label.
